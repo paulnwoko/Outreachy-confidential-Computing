@@ -7,7 +7,7 @@ It is not intended to be writteng by hand, rather it is designed to be an effect
 In this tutorial i will be demostrating how to compile a c application to web assembly using Emscripten tool and how to run on a browser using vscode live server
 
 
-### Seting up the Emscripten work enviroment
+### SETTING UP EMSCRIPTING WORK ENVIROMENT
 ##### Get the emsdk repo cloned to a directory 
     git clone https://github.com/emscripten-core/emsdk.git
 
@@ -30,7 +30,7 @@ In this tutorial i will be demostrating how to compile a c application to web as
 
 ##### Activate PATH and other environment variables in the current terminal
     source ./emsdk_env.sh
-
+    
 ###### Reference site: https://emscripten.org/docs/getting_started/downloads.html
 
 
@@ -88,6 +88,4 @@ To run the wasm file on a browser, i opened the hello.html on vscode, right  cli
 #### THE PICTURE BELOW SHOWS MY C APPLICATION RUNNING ON A WEB BROWSER
 
 ![image](https://user-images.githubusercontent.com/42975388/138513593-f08b8877-facd-4515-bbf5-3a75a1da6b42.png)
-
-
 
