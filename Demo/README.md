@@ -9,6 +9,8 @@ In this tutorial i will be demostrating how to compile a c application to web as
 
 
 ### SETTING UP EMSCRIPTING WORK ENVIROMENT
+Open your terminal, then copy and paste the following commands on your terminal.
+
 ##### Get the emsdk repo cloned to a directory 
     git clone https://github.com/emscripten-core/emsdk.git
 
