@@ -70,7 +70,7 @@ Emscripten will generate the following file in the c source directory as show in
 
 
 ####     
-#### C SOURCE DIRECTORY WILL NOW CONTAIN A .html, .js, AND .wasm FILE AS SHOWN IN THE PICTURE BELOW
+#### The C SOURCE DIRECTORY WILL NOW CONTAIN A .html, .js, AND .wasm FILE AS SHOWN IN THE PICTURE BELOW
 ![image](https://user-images.githubusercontent.com/42975388/138512345-8d045da5-dded-4824-95f0-201182e356d8.png)
 
 ####   
