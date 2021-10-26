@@ -8,7 +8,7 @@ In this tutorial i will be demostrating how to compile a c application to web as
 
 
 ### SETTING UP EMSCRIPTING WORK ENVIROMENT
-Open your terminal, then copy and paste the following commands on your terminal.
+Open your terminal, then copy and paste the following commands on your terminal. this is done once, skip if you have already done this setup before
 ##### Get the emsdk repo cloned to a directory 
     git clone https://github.com/emscripten-core/emsdk.git
 
@@ -37,6 +37,7 @@ Open your terminal, then copy and paste the following commands on your terminal.
 
 ####  
 #### COMPILING C CODE TO WASM
+    
 
 ```C
 #include <stdio.h>
@@ -55,9 +56,18 @@ int main() {
 }
 
 ```
+open the terminal fron emsdk/ folder and run the commands below. 
+##### Make the "latest" SDK "active" for the current user. (writes .emscripten file)
+    ./emsdk activate latest
+
+
+##### Activate PATH and other environment variables in the current terminal
+    source ./emsdk_env.sh
 
 Here i Compiled my C application to wasm and creating HTML to run our code in, plus all the JavaScript "glue" code needed to run the wasm in the web environment.
-Now, using the terminal window I used to enter the Emscripten compiler environment, I navigated to the directory i saved my c source file(), and ran the following command: 
+Now.
+
+Using the terminal window I used to enter the Emscripten compiler environment, I navigated to the directory i saved my c source file(), and ran the following command: 
 
 ###### emcc hello.c -s WASM=1 -o hello.html
 
