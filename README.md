@@ -69,7 +69,7 @@ Now.
 
 Using the terminal window I used to enter the Emscripten compiler environment, I navigated to the directory i saved my c source file(), and ran the following command: 
 
-###### emcc hello.c -s WASM=1 -o hello.html
+    emcc hello.c -s WASM=1 -o hello.html
 
 **-s WASM=1** — Specifies that we want wasm output. If we don’t specify this, Emscripten will just output asm.js, as it does by default.
 
