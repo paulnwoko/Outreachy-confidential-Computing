@@ -1,5 +1,4 @@
 
-
 ## TUTORIAL ON HOW TO GET C/C++ WORKING WITH WEB ASSEMBLY
 
 ### INTRODUCTION
@@ -9,8 +8,7 @@ In this tutorial i will be demostrating how to compile a c application to web as
 
 
 ### SETTING UP EMSCRIPTING WORK ENVIROMENT
-Open your terminal, then copy and paste the following commands on your terminal.
-
+Open your terminal, then copy and paste the following commands on your terminal. this is done once, skip if you have already done this setup before
 ##### Get the emsdk repo cloned to a directory 
     git clone https://github.com/emscripten-core/emsdk.git
 
@@ -39,6 +37,7 @@ Open your terminal, then copy and paste the following commands on your terminal.
 
 ####  
 #### COMPILING C CODE TO WASM
+    
 
 ```C
 #include <stdio.h>
@@ -57,11 +56,20 @@ int main() {
 }
 
 ```
+open the terminal fron emsdk/ folder and run the commands below. 
+##### Make the "latest" SDK "active" for the current user. (writes .emscripten file)
+    ./emsdk activate latest
+
+
+##### Activate PATH and other environment variables in the current terminal
+    source ./emsdk_env.sh
 
 Here i Compiled my C application to wasm and creating HTML to run our code in, plus all the JavaScript "glue" code needed to run the wasm in the web environment.
-Now, using the terminal window I used to enter the Emscripten compiler environment, I navigated to the directory i saved my c source file(), and ran the following command: 
+Now.
 
-###### emcc hello.c -s WASM=1 -o hello.html
+Using the terminal window I used to enter the Emscripten compiler environment, I navigated to the directory i saved my c source file(), and ran the following command: 
+
+    emcc hello.c -s WASM=1 -o hello.html
 
 **-s WASM=1** — Specifies that we want wasm output. If we don’t specify this, Emscripten will just output asm.js, as it does by default.
 
@@ -70,7 +78,7 @@ Emscripten will generate the following file in the c source directory as show in
 
 
 ####     
-#### The C SOURCE DIRECTORY WILL NOW CONTAIN A .html, .js, AND .wasm FILE AS SHOWN IN THE PICTURE BELOW
+#### C SOURCE DIRECTORY WILL NOW CONTAIN A .html, .js, AND .wasm FILE AS SHOWN IN THE PICTURE BELOW
 ![image](https://user-images.githubusercontent.com/42975388/138512345-8d045da5-dded-4824-95f0-201182e356d8.png)
 
 ####   
