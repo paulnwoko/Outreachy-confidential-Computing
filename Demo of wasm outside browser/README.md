@@ -1,5 +1,5 @@
 
-## COMPILING C/C++ TO WASM AND RUNNING IT OUTSIDE WEB BROWSER
+## COMPILING C/C++ TO WASM AND RUNNING IT OUTSIDE WEB BROWSER USING THE COMMAND LINE INTERFACE
 In this tutorial i will be compiling C programs to WASI and executing the compiled WebAssembly module using wasmtime runtime.
 
 ## Setting up enviroment
