@@ -1,5 +1,5 @@
 
-## TUTORIAL ON HOW TO GET C/C++ WORKING WITH WEB ASSEMBLY
+## TUTORIAL ON HOW TO COMPILE C/C++ TO WEB ASSEMBLY AND RUN IN A BROWSER
 
 ### INTRODUCTION
 WebAssembly is a new type of code that can be run in modern browsers and provides new feature and major gains in performance. 
